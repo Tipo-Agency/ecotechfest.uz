@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ru" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOTECH 2026 | Future of Living</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#056635',
+              accent: '#10b981',
+              dark: '#0a0a0a',
+              card: '#161616',
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'slide-right': 'slideRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+              'float-slow': 'floatSlow 8s ease-in-out infinite',
+              'orbit': 'orbit 20s linear infinite',
+              'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slideRight: {
+                'from': { opacity: '0', transform: 'translateX(-10px)', width: '0' },
+                'to': { opacity: '1', transform: 'translateX(0)', width: '140px' },
+              },
+              floatSlow: {
+                '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                '50%': { transform: 'translateY(-20px) rotate(2deg)' },
+              },
+              orbit: {
+                'from': { transform: 'rotate(0deg)' },
+                'to': { transform: 'rotate(360deg)' },
+              },
+              pulseSoft: {
+                '0%, 100%': { opacity: '0.4', scale: '1' },
+                '50%': { opacity: '0.8', scale: '1.05' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      section {
+        scroll-margin-top: 100px;
+      }
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+        overflow-x: hidden;
+      }
+      .dark body {
+        background-color: #0a0a0a;
+        color: #ffffff;
+      }
+      .light body {
+        background-color: #ffffff;
+        color: #0f172a;
+      }
+      .glass {
+        backdrop-filter: blur(12px);
+      }
+      .dark .glass {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .light .glass {
+        background: rgba(15, 23, 42, 0.02);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #056635 0%, #10b981 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bg-grid {
+        background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0);
+        background-size: 40px 40px;
+        opacity: 0.05;
+      }
+      @keyframes draw {
+        to { stroke-dashoffset: 0; }
+      }
+      .animate-draw {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 6s linear infinite;
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="font-sans relative">
+    <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+    <div id="root" class="relative z-10"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
