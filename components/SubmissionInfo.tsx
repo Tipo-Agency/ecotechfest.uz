@@ -15,7 +15,7 @@ export const SubmissionInfo: React.FC = () => {
     { icon: <FileJson className="w-4 h-4" />, text: t('apply.docs.pdf') }
   ];
 
-  const mailRecipient = "contest@seda.uz";
+  const mailRecipient = "ecotechfest@lovin.eco";
   const mailSubject = "ECOTECH 2026 Submission";
   const mailLink = `mailto:${mailRecipient}?subject=${encodeURIComponent(mailSubject)}`;
 
