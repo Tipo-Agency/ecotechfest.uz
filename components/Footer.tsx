@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
                 <div className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-lg">
                   <Mail className="w-4 h-4" />
                 </div>
-                <a href="mailto:contest@seda.uz" className="hover:text-primary transition-colors">contest@seda.uz</a>
+                <a href="mailto:ecotechfest@lovin.eco" className="hover:text-primary transition-colors">ecotechfest@lovin.eco</a>
               </li>
               <li className="flex items-center gap-4 text-xs font-black text-gray-500 dark:text-gray-400 group uppercase tracking-widest">
                 <div className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-lg">
