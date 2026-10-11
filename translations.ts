@@ -95,7 +95,8 @@ export const translations = {
       rights: '© 2026 ECOTECH FEST. ВСЕ ПРАВА ЗАЩИЩЕНЫ TSA.',
       role_org: 'Организатор',
       role_uni: 'Университет',
-      dev_by: 'Разработано в'
+      dev_by: 'Разработано в',
+      credit: 'Разработка сайта — TIPA'
     }
   },
   en: {
@@ -191,7 +192,8 @@ export const translations = {
       rights: '© 2026 ECOTECH FEST. ALL RIGHTS RESERVED BY TSA.',
       role_org: 'Organizer',
       role_uni: 'University',
-      dev_by: 'Developed in'
+      dev_by: 'Developed in',
+      credit: 'Website by TIPA'
     }
   },
   uz: {
@@ -287,7 +289,8 @@ export const translations = {
       rights: '© 2026 ECOTECH FEST. BARCHA HUQUQLAR TSA TOMONIDAN HIMOYA QILINGAN.',
       role_org: 'Tashkilotchi',
       role_uni: 'Universitet',
-      dev_by: 'Tomonidan ishlab chiqilgan'
+      dev_by: 'Tomonidan ishlab chiqilgan',
+      credit: 'Sayt yaratish — TIPA'
     }
   }
 };
